@@ -6,6 +6,7 @@ import config from './cofig/firebaseConfig'
 import Login from './pages/Login/Login';
 import Signup from './pages/Login/Signup';
 import Home from './pages/Home/Home';
+import Auditions from './pages/Auditions/Auditions';
 
 
 const firebaseApp = firebase.initializeApp(config);
@@ -30,6 +31,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Login} />
         <Route exact path='/signup' component={Signup} />
+        <Route exact path='/auditions' component={Auditions} />
         <ProtectedRoute exact path = "/home" component = {Home}/>
       </Switch>
     </HashRouter>
