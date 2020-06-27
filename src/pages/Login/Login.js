@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Form, Button } from 'react-bootstrap'
 import { Link, withRouter } from 'react-router-dom'
 import firebase from 'firebase';
 function Login(props) {
@@ -28,13 +28,15 @@ function Login(props) {
             < Card style = {
                 {
                     position: 'fixed',
-                    top: '20%',
+                    top: '10%',
                     left: '50%',
-                    transform: 'translate(-50% , 50%)'
+                    transform: 'translate(-50% , 50%)',
+                    width: '20rem',
+                    height: '20rem'
                 }
             } >
                 <Card.Body>
-                        <form onSubmit= {login} >
+                        <Form onSubmit= {login} >
                             <label>
                                 Email
                             </label>
@@ -46,6 +48,7 @@ function Login(props) {
                                 onChange ={ e => setEmail(e.target.value)}
                                 autoComplete = "off"
                             />
+                            <br/>
                             <br/>
                             <label>
                                 Password
@@ -59,11 +62,9 @@ function Login(props) {
                                 autoComplete = "off"
                             />
                             <br/>
-                            <input
-                                type="submit"
-                                text ="Login"
-                            />
-                    </form>
+                            <br/>
+                            <Button variant="primary" type="submit"> Login</Button>
+                    </Form>
                 </Card.Body>
                 <Card.Footer>
                     <span>Dont have an account? <Link to ="/signup">signup</Link> </span>

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Form, Button } from 'react-bootstrap'
 import { Link, withRouter } from 'react-router-dom'
 import firebase from 'firebase';
 function Signup(props) {
@@ -41,7 +41,7 @@ function Signup(props) {
                 }
             } >
                 <Card.Body>
-                        <form onSubmit ={Signup} >
+                        <Form onSubmit ={Signup} >
                             <label>
                                 Email
                             </label>
@@ -53,6 +53,7 @@ function Signup(props) {
                                 value = {Email}
                                 onChange ={e => setEmail(e.target.value)}
                             />
+                            <br/>
                             <br/>
                             <label>
                                 Password
@@ -82,7 +83,7 @@ function Signup(props) {
                                     >Password must contain  1 Upper case, one special character, one number and atleast 8 character </p>
                                     : <p></p> 
                             }
-                            <br/>
+                           
                             <label>
                                 Re-Enter Password
                             </label>
@@ -113,11 +114,8 @@ function Signup(props) {
                                 : <p></p>
                             }
                             <br/>
-                            <input
-                                type="submit"
-                                text ="Login"
-                            />
-                    </form>
+                            <Button variant="primary" type="submit"> Signup</Button>
+                    </Form>
                 </Card.Body>
                 <Card.Footer>
                     <span>Already have an account? <Link to="/">signin</Link> </span>
