@@ -1,0 +1,22 @@
+body{
+    background: radial-gradient(#383333,#383333,#383333);
+}
+.card{
+    width: 20em;
+}
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(216, 208, 208, 0.253)!important;
+}
+.card-body{
+    padding: 3rem 0!important;
+    background-color: rgb(151, 211, 151);    
+}
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding: 0.4rem 1.9rem;
+}
+.container-fluid{
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+}
