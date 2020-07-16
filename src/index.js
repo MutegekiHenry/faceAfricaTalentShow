@@ -5,7 +5,11 @@ import App from './App';
 import store from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+<<<<<<< HEAD
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+=======
+
+>>>>>>> e24e6ee28f80cc2313b33c370e13ecf9c4ed1ccc
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

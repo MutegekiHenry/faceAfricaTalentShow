@@ -31,9 +31,14 @@ function Login(props) {
                     top: '10%',
                     left: '50%',
                     transform: 'translate(-50% , 50%)',
+<<<<<<< HEAD
                     width: '30rem',
                     height: '30rem',
                     backgroundColor: 'rgb(151, 211, 151)'
+=======
+                    width: '20rem',
+                    height: '20rem'
+>>>>>>> e24e6ee28f80cc2313b33c370e13ecf9c4ed1ccc
                 }
             } >
                 <Card.Body>
